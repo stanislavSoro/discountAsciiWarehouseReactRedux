@@ -35,6 +35,7 @@ class List extends React.Component  {
   }
   startCheckingScrollPosition(cb) {
     let self = this;
+    
     // start checking for the scroll position
     this.checkInterval = setInterval(function(){
       if (document.body.scrollHeight <= (document.documentElement.clientHeight + document.body.scrollTop + 200)) {
